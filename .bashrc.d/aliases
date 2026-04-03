@@ -6,7 +6,7 @@
 #############################
 
 export LS_OPTIONS='--color=auto'
-eval "$(dircolors)"
+eval "$(dircolors --sh)"
 
 alias l='ls $LS_OPTIONS -CF'
 alias ll='ls $LS_OPTIONS -l'
@@ -15,8 +15,8 @@ alias la='ls $LS_OPTIONS --almost-all -l'
 export GREP_OPTIONS='--color=auto'
 
 alias grep='grep $GREP_OPTIONS'
-alias fgrep='fgrep $GREP_OPTIONS'
-alias egrep='egrep $GREP_OPTIONS'
+# alias fgrep='fgrep $GREP_OPTIONS'
+# alias egrep='egrep $GREP_OPTIONS'
 
 alias t='tree -L 1'
 alias tt='tree -L 2'
