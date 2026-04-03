@@ -12,9 +12,9 @@ cd "$PROJECT_ROOT"
 
 function make_symlinks() {
 
-    [-f "${HOME}/.bashrc"       ] && mv "${HOME}/.bashrc"       "${HOME}/.bashrc.BAK"
-    [-d "${HOME}/.bashrc.d"     ] && mv "${HOME}/.bashrc.d"     "${HOME}/.bashrc.d.BAK"
-    [-d "${HOME}/.bashrc.d.dev" ] && mv "${HOME}/.bashrc.d.dev" "${HOME}/.bashrc.d.dev.BAK"
+    [ -f "${HOME}/.bashrc"       ] && mv "${HOME}/.bashrc"       "${HOME}/.bashrc.BAK"
+    [ -d "${HOME}/.bashrc.d"     ] && mv "${HOME}/.bashrc.d"     "${HOME}/.bashrc.d.BAK"
+    [ -d "${HOME}/.bashrc.d.dev" ] && mv "${HOME}/.bashrc.d.dev" "${HOME}/.bashrc.d.dev.BAK"
 
     ln -s "${DOTFILES}/.bashrc"       "${HOME}/.bashrc"
     ln -s "${DOTFILES}/.bashrc.d"     "${HOME}/.bashrc.d"
@@ -24,7 +24,7 @@ function make_symlinks() {
 
 function make_symlinks_wrapper() {
 
-    # (Run this from production ($DOTFILES) rather than development)
+    # Make sure we are in the production clone of the repo ($DOTFILES) rather than development ($HOME/git, etc).
 
     if [ "$PROJECT_ROOT" == "$DOTFILES" ]; then
 
