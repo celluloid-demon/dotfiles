@@ -29,6 +29,8 @@ alias tta='tree -a -L 2'
 alias ttta='tree -a -L 3'
 alias tttta='tree -a -L 4'
 alias ttttta='tree -a -L 5'
+alias T='tree'
+alias Ta='tree -a'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -36,6 +38,5 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
-# alias gpush='git add . && git commit --message="${1:-edit}" && git push'
-alias gpush='git add . && git commit --message="${1}" && git push'
+# alias gpush='git add . && git commit --message="${1}" && git push' # implemented as a function instead
 alias gpull='git pull'

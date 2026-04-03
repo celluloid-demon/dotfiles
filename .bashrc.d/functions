@@ -1,0 +1,14 @@
+
+###############################
+#                             #
+#          FUNCTIONS          #
+#                             #
+###############################
+
+# (Standard Bash aliases do not support positional arguments like $1, so we implement a function instead)
+
+git_push() {
+
+    git add . && git commit -m "$1" && git push
+
+}
