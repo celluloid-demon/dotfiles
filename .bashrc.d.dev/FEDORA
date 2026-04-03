@@ -1,0 +1,13 @@
+
+############################
+#                          #
+#          FEDORA          #
+#                          #
+############################
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+[ -r /home/jonathan/.config/byobu/prompt ] && source /home/jonathan/.config/byobu/prompt   #byobu-prompt#
+
+source '/home/jonathan/.bash_completions/boilerplates.sh'

@@ -1,0 +1,26 @@
+
+####################################
+#                                  #
+#          DOCKER ALIASES          #
+#                                  #
+####################################
+
+# alias d='docker'
+# alias dc='docker compose'
+# alias dcb='docker compose build'
+# alias dce='docker compose exec'
+# alias dcl='docker compose logs'
+# alias dclf='docker compose logs -f'
+# alias dcln='docker compose logs --tail=0 -f'
+# alias dcd='docker compose down'
+# alias dcp='docker compose ps'
+# alias dcu='docker compose up --detach --remove-orphans'
+# alias dps='docker ps'
+# alias dpsa='docker ps -a'
+# alias dpsf='docker ps --filter "name=^/.*$"'
+# alias dpsf1='docker ps --filter "name=^/.*$" --format "{{.Names}}"'
+# alias dpsf2='docker ps --filter "name=^/.*$" --format "{{.ID}}"'
+# alias dpsf3='docker ps --filter "name=^/.*$" --format "{{.Names}} {{.ID}}"'
+
+alias up='docker compose up --detach --remove-orphans'
+alias down='docker compose down'
