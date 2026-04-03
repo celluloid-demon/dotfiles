@@ -26,7 +26,7 @@ function make_symlinks_wrapper() {
 
     # Make sure we are in the production clone of the repo ($DOTFILES) rather than development ($HOME/git, etc).
 
-    if [ "$PROJECT_ROOT" == "$DOTFILES" ]; then
+    if [ "$(pwd)" == "$DOTFILES" ]; then
 
         make_symlinks
 
