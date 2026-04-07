@@ -21,6 +21,7 @@ alias dcp='docker compose ps'
 # alias dpsf1='docker ps --filter "name=^/.*$" --format "{{.Names}}"'
 # alias dpsf2='docker ps --filter "name=^/.*$" --format "{{.ID}}"'
 # alias dpsf3='docker ps --filter "name=^/.*$" --format "{{.Names}} {{.ID}}"'
+alias dps='docker ps --filter "name=^/.*$" --format "{{.Names}} {{.ID}}"'
 
 alias up='docker compose up --detach --remove-orphans'
 alias down='docker compose down'
