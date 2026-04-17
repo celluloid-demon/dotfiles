@@ -38,8 +38,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
-# alias push='git add . && git commit --message="${1}" && git push' # implemented as a function instead
-alias pull='git pull'
+# alias gpush='git add . && git commit --message="${1}" && git push' # implemented as a function instead
+alias gpull='git pull'
 
 ##########################
 #                        #
