@@ -11,6 +11,3 @@
 [ -r /home/jonathan/.config/byobu/prompt ] && source /home/jonathan/.config/byobu/prompt   #byobu-prompt#
 
 source '/home/jonathan/.bash_completions/boilerplates.sh'
-
-# GhosTTY
-alias ssh='ghostty +ssh --'
